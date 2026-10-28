@@ -1,0 +1,251 @@
+
+/* North Star Bakery - Website Styles */
+
+/* Color palette:
+   Cream: #FFF8EF
+   Dark brown: #4A2C20
+   Warm terracotta: #B85C38
+   White: #FFFFFF
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4A2C20;
+    background-color: #FFF8EF;
+}
+
+header {
+    background-color: #4A2C20;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+header h1 {
+    margin: 12px 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+header p {
+    margin: 8px 0 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #B85C38;
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 0 0 24px;
+    border-radius: 10px;
+    border: 1px solid #E8D8C8;
+}
+
+h2 {
+    color: #B85C38;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+h3 {
+    color: #4A2C20;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+a {
+    color: #8C3F25;
+}
+
+main a {
+    font-weight: bold;
+}
+
+main a:hover,
+main a:focus {
+    color: #4A2C20;
+}
+
+audio {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 16px 0;
+}
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid #D7BBA5;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 0 0 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4A2C20;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #B9A394;
+    border-radius: 5px;
+    font: inherit;
+    color: #4A2C20;
+    background-color: #FFFFFF;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+    outline: 3px solid #B85C38;
+    outline-offset: 3px;
+}
+
+button {
+    background-color: #B85C38;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4A2C20;
+}
+
+footer {
+    background-color: #4A2C20;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #FFF8EF;
+}
+
+/* Larger screens */
+@media (min-width: 700px) {
+    header {
+        padding: 32px 24px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    main {
+        padding: 32px 24px;
+    }
+
+    section {
+        padding: 28px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    fieldset {
+        padding: 24px;
+    }
+}
