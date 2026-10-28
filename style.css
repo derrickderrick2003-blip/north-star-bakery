@@ -249,3 +249,46 @@ footer a:focus {
         padding: 24px;
     }
 }
+
+/* Touchstone 4: Product filter */
+.product-filter {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #b8a58a;
+  border-radius: 8px;
+  background-color: #fffaf2;
+}
+
+.product-filter label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.product-filter select {
+  max-width: 100%;
+  padding: 0.65rem;
+  font: inherit;
+}
+
+#filter-status {
+  margin-bottom: 0;
+}
+
+/* Keep hidden product sections out of the layout. */
+[hidden] {
+  display: none !important;
+}
+
+/* Touchstone 4: Form validation feedback */
+.field-error {
+  display: block;
+  margin-top: 0.35rem;
+  color: #a32222;
+  font-size: 0.9rem;
+}
+
+[aria-invalid="true"] {
+  border: 2px solid #a32222;
+  outline-offset: 2px;
+}
